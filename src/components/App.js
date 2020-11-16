@@ -7,10 +7,12 @@ const App = () => {
     const [productData, setProductData] = useState({});
     useEffect(() => {
       fetch('https://www.westelm.com/services/catalog/v4/category/shop/new/all-new/index.json')
-        .then(response => response.json())
-          .then(data => {
-              setProductData(data);
-            })
+      .then(response => {
+          response.json();
+        })
+      .then(data => {
+          setProductData(data);
+        })
     }, [setProductData]);
     return (
       <React.Fragment>

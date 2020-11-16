@@ -5,5 +5,5 @@ module.exports = {
       '<rootDir>/__mocks__/fileMock.js',
     '\\.(css|scss|sass)$': 'identity-obj-proxy',
   },
-  collectCoverageFrom: ['**/*.js', '!**/index.js', '!**/packs/**']
+  collectCoverageFrom: ['src/**/*.js', '!**/index.js']
 }
